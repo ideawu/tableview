@@ -1,0 +1,1274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+		<title>JsDoc Reference - TableView</title>
+
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 160px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+	padding: 8px;
+}
+
+#content
+{
+	margin-left: 190px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 0 8px;
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+	padding: 0;
+	margin: 0 0 8px 0;
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+	background-color: #7F8FB1;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+	border: 1px #7F8FB1 solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">
+</div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a>
+| <a href="../files.html">File Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><a href="../symbols/PagerView.html">PagerView</a></li>
+	
+	<li><a href="../symbols/SelectorView.html">SelectorView</a></li>
+	
+	<li><a href="../symbols/SortView.html">SortView</a></li>
+	
+	<li><a href="../symbols/TableView.html">TableView</a></li>
+	
+	<li><a href="../symbols/TableView-DisplayOptions.html">TableView-DisplayOptions</a></li>
+	
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class TableView
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+			
+				用于显示数据表格的JavaScript控件. 集成的分页控件, 可对表格中的数据集进行客户端分页.
+				
+				
+					<br /><i>Defined in: </i> <a href="../symbols/src/tableview-1.1.1_scripts_TableView.js.html">TableView.js</a>.
+				
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class TableView.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/TableView.html#constructor">TableView</a></b>(id:)
+							</div>
+							<div class="description"></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class TableView.">
+					<caption>Field Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Field Attributes</th>
+							<th scope="col">Field Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/TableView.html#container">container</a></b>
+								</div>
+								<div class="description">当前控件所处的HTML节点引用.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/TableView.html#dataKey">dataKey</a></b>
+								</div>
+								<div class="description">数据集的每一条记录的唯一标识字段名.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/TableView.html#display">display</a></b>
+								</div>
+								<div class="description">用于确定要显示哪些内部控件.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/TableView.html#header">header</a></b>
+								</div>
+								<div class="description">要显示的记录的字段, 以及所对应的字段名.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/TableView.html#pager">pager</a></b>
+								</div>
+								<div class="description">集成的分页控件, 可对表格中的数据集进行客户端分页.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/TableView.html#sort">sort</a></b>
+								</div>
+								<div class="description">集成的排序控件, 用于显示分页按钮/链接.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/TableView.html#title">title</a></b>
+								</div>
+								<div class="description">要显示的数据表格的标题.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class TableView.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/TableView.html#add">add</a></b>(row:)
+								</div>
+								<div class="description">添加一条记录, 如果控件已经被渲染, 会导致一次刷新.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/TableView.html#addRange">addRange</a></b>(rows:)
+								</div>
+								<div class="description">添加记录列表, 如果控件已经被渲染, 会导致一次刷新.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/TableView.html#clear">clear</a></b>()
+								</div>
+								<div class="description">清空所有行.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/TableView.html#del">del</a></b>(row:)
+								</div>
+								<div class="description">删除一个记录对象, 如果控件已经被渲染, 会导致一次刷新.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/TableView.html#delRange">delRange</a></b>(rows:)
+								</div>
+								<div class="description">删除记录对象列表, 如果控件已经被渲染, 会导致一次刷新.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/TableView.html#filter">filter</a></b>(text:)
+								</div>
+								<div class="description">进行模糊过滤.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/TableView.html#get">get</a></b>(id)
+								</div>
+								<div class="description">获取数据集指定id一条记录.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/TableView.html#getDataSource">getDataSource</a></b>()
+								</div>
+								<div class="description">返回所有的记录的列表.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/TableView.html#getSelected">getSelected</a></b>()
+								</div>
+								<div class="description">获取所有标记为选择的行对应的记录的列表.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/TableView.html#getSelectedKeys">getSelectedKeys</a></b>()
+								</div>
+								<div class="description">获取所有已选择的数据对象键值的列表.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/TableView.html#render">render</a></b>()
+								</div>
+								<div class="description">渲染控件.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/TableView.html#rowCount">rowCount</a></b>()
+								</div>
+								<div class="description">获取当前可显示的数据数.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/TableView.html#selectAll">selectAll</a></b>()
+								</div>
+								<div class="description">设置所有行的选择标记.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/TableView.html#unselectAll">unselectAll</a></b>()
+								</div>
+								<div class="description">取消所有行的选择标记.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the events documented in the class TableView.">
+					<caption>Event Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Event Attributes</th>
+							<th scope="col">Event Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/TableView.html#event:dblclick">dblclick</a></b>(id:)
+								</div>
+								<div class="description">使用者重写本方法, 进行行双击回调.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>TableView</b>(id:)
+				</div>
+				
+				<div class="description">
+					
+					<br /><i>Author: </i>ideawu@163.com.
+				</div>
+				
+				
+				
+				<pre class="code">### HTML代码:
+&lt;div id="my_div"&gt;&lt;/div&gt;
+
+### JavaScript代码:
+var table = new TableView('my_div');
+table.dataKey = 'id';
+table.header = {
+	'id' : 'Id',
+	'name' : 'Name',
+};
+
+table.add({id:1, name:'Tom'});
+table.render();</pre>
+				
+				
+				
+				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								<span class="light fixedFont">{String}</span>  <b>id:</b>
+								
+							</dt>
+								<dd>HTML节点的id, 控件将显示在该节点中.</dd>
+						
+						</dl>
+					
+					
+					
+					
+					
+						<dl class="detailList">
+						<dt class="heading">Returns:</dt>
+						
+								<dd><span class="light fixedFont">{<a href="../symbols/TableView.html">TableView</a>}</span> : 返回分页控件实例.</dd>
+						
+						</dl>
+					
+					
+						<dl class="detailList">
+						<dt class="heading">Requires:</dt>
+						
+							<dd>jQuery <a href="../symbols/PagerView.html">PagerView</a> <a href="../symbols/SortView.html">SortView</a></dd>
+						
+						</dl>
+					
+					
+						<dl class="detailList">
+						<dt class="heading">See:</dt>
+						
+							<dd>http://www.ideawu.net/</dd>
+						
+						</dl>
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+				<div class="sectionTitle">
+					Field Detail
+				</div>
+				
+					<a name="container"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{DOMElement}</span>
+					<b>container</b>
+					
+					</div>
+					<div class="description">
+						当前控件所处的HTML节点引用.
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="dataKey"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{String}</span>
+					<b>dataKey</b>
+					
+					</div>
+					<div class="description">
+						数据集的每一条记录的唯一标识字段名. 类似数据库表的主键字段名.
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="display"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/TableView-DisplayOptions.html">TableView-DisplayOptions</a>}</span>
+					<b>display</b>
+					
+					</div>
+					<div class="description">
+						用于确定要显示哪些内部控件.
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="header"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Object}</span>
+					<b>header</b>
+					
+					</div>
+					<div class="description">
+						要显示的记录的字段, 以及所对应的字段名. 如 'id' : '编号'.
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="pager"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/PagerView.html">PagerView</a>}</span>
+					<b>pager</b>
+					
+					</div>
+					<div class="description">
+						集成的分页控件, 可对表格中的数据集进行客户端分页.
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="sort"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/SortView.html">SortView</a>}</span>
+					<b>sort</b>
+					
+					</div>
+					<div class="description">
+						集成的排序控件, 用于显示分页按钮/链接.
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="title"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{String}</span>
+					<b>title</b>
+					
+					</div>
+					<div class="description">
+						要显示的数据表格的标题.
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					
+				
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="add"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>add</b>(row:)
+					
+					</div>
+					<div class="description">
+						添加一条记录, 如果控件已经被渲染, 会导致一次刷新.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>row:</b>
+									
+								</dt>
+								<dd>记录对象.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="addRange"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addRange</b>(rows:)
+					
+					</div>
+					<div class="description">
+						添加记录列表, 如果控件已经被渲染, 会导致一次刷新.
+用本方法替代连续多次<a href="../symbols/TableView.html#add">TableView#add</a>(), 以提高性能.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Array[Object]}</span> <b>rows:</b>
+									
+								</dt>
+								<dd>记录对象的数组.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="clear"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>clear</b>()
+					
+					</div>
+					<div class="description">
+						清空所有行.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="del"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>del</b>(row:)
+					
+					</div>
+					<div class="description">
+						删除一个记录对象, 如果控件已经被渲染, 会导致一次刷新.
+可以在调用本方法前, 调用<a href="../symbols/TableView.html#get">TableView#get</a>()方法通过id获取要删除的记录对象.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>row:</b>
+									
+								</dt>
+								<dd>记录对象.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="delRange"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>delRange</b>(rows:)
+					
+					</div>
+					<div class="description">
+						删除记录对象列表, 如果控件已经被渲染, 会导致一次刷新.
+用本方法替代连续多次<a href="../symbols/TableView.html#del">TableView#del</a>(), 以提高性能.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Array[Object]}</span> <b>rows:</b>
+									
+								</dt>
+								<dd>记录对象的数组.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="filter"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>filter</b>(text:)
+					
+					</div>
+					<div class="description">
+						进行模糊过滤.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>text:</b>
+									
+								</dt>
+								<dd>Regex字符串.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="get"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Object}</span>
+					<b>get</b>(id)
+					
+					</div>
+					<div class="description">
+						获取数据集指定id一条记录.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>id</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Object}</span> 数据集中的一条记录.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getDataSource"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Array[Object]}</span>
+					<b>getDataSource</b>()
+					
+					</div>
+					<div class="description">
+						返回所有的记录的列表.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Array[Object]}</span> </dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getSelected"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Array[Object]}</span>
+					<b>getSelected</b>()
+					
+					</div>
+					<div class="description">
+						获取所有标记为选择的行对应的记录的列表.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Array[Object]}</span> </dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getSelectedKeys"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Array[Key]}</span>
+					<b>getSelectedKeys</b>()
+					
+					</div>
+					<div class="description">
+						获取所有已选择的数据对象键值的列表.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Array[Key]}</span> </dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="render"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>render</b>()
+					
+					</div>
+					<div class="description">
+						渲染控件.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="rowCount"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{int}</span>
+					<b>rowCount</b>()
+					
+					</div>
+					<div class="description">
+						获取当前可显示的数据数.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{int}</span> </dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="selectAll"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>selectAll</b>()
+					
+					</div>
+					<div class="description">
+						设置所有行的选择标记. 如果设置了分页, 则只对当前页有效.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="unselectAll"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>unselectAll</b>()
+					
+					</div>
+					<div class="description">
+						取消所有行的选择标记. 如果设置了分页, 则只对当前页有效.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+				<div class="sectionTitle">
+					Event Detail
+				</div>
+				
+					<a name="event:dblclick"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>dblclick</b>(id:)
+					
+					</div>
+					<div class="description">
+						使用者重写本方法, 进行行双击回调.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>id:</b>
+									
+								</dt>
+								<dd>双击行的主键值.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.3.0 on Sat Oct 23 2010 16:24:07 GMT+0800 (CST)
+		</div>
+	</body>
+</html>

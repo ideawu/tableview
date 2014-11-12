@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/jquery-ui-1.7.2.custom.min.js"></script>
+	<script type="text/javascript" src="scripts/SortView.js"></script>
+	<script type="text/javascript" src="scripts/PagerView.js"></script>
+	<script type="text/javascript" src="scripts/TableView.js"></script>
+	<script type="text/javascript" src="scripts/SelectorView.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script></head>
+<body>
+
+<table>
+	<tr>
+		<th field="id">Id</th>
+		<th field="name">Name</th>
+		<th field="name_cn">中文名</th>
+		<th field="text">Text</th>
+		<th field="input">输入</th>
+	</tr>
+</table>
+
+<script type="text/javascript">
+<!--
+var elements = {};
+
+var ths = $('table th');
+for(var i=0; i<ths.length; i++){
+	var th = ths[i];
+	var k = $(th).attr('field');
+	if(k != undefined){
+		elements[k] = th;
+	}
+}
+
+
+var sort = new SortView();
+sort.fields = {
+	'id'		: ['int', null],
+	'name'		: [null, null],
+	'name_cn'	: [null, null],
+	'text'		: [null, null]
+};
+sort.render(elements);
+
+
+var table = [];
+var input_html = '';
+table.push({id: '0', name: 'None', name_cn: '幽灵', text: 'None', input: input_html});
+table.push({id: '1', name: 'Tom', name_cn: '汤姆', text: 'Tomcat', input: input_html});
+table.push({id: '2', name: 'Jerry', name_cn: '杰瑞', text: 'Jerrimy', input: input_html});
+table.push({id: '3', name: 'Jim', name_cn: '吉姆', text: 'System Engineer', input: input_html});
+table.push({id: '4', name: 'Lucy', name_cn: '露西', text: 'Lucy & Lily', input: input_html});
+table.push({id: '5', name: 'Jessmine', name_cn: 'Jessmine', text: 'Jessmine is a girl', input: input_html});
+table.push({id: '10', name: 'Ta', name_cn: '他/她', text: '他/她', input: input_html});
+table.push({id: '11', name: 'ideawu', name_cn: '我', text: '<a href="http://www.ideawu.net/">http://www.ideawu.net/</a>', input: input_html});
+
+render_table(table);
+
+
+sort.onclick = function(){
+	sort.sort(table);
+	render_table(table);
+}
+
+
+function render_table(table){
+	var html = '';
+	for(var i in table){
+		row = table[i];
+		html += '<tr>';
+		for(var k in row){
+			html += '<td>' + row[k] + '</td>';
+		}
+		html += '</tr>';
+	}
+
+	$('table tr').nextAll().remove();
+	$('table tr').after(html);
+}
+
+//-->
+</script>
+
+</body>
+</html>
