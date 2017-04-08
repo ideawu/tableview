@@ -15,6 +15,7 @@
  *
  * ### JavaScript:
  * var pager = new PagerView('pager');
+ * pager.urlBase = 'http://....'; // optional 如果不指定, 则生成 js 事件
  * pager.index = 3; // 当前是第3页
  * pager.size = 16; // 每页显示16条记录
  * pager.itemCount = 100; // 一共有100条记录
@@ -60,6 +61,8 @@ var PagerView = function(id){
 	 * @type int
 	 */
 	this.itemCount = 0;
+	
+	this.urlBase = null;
 
 	/**
 	 * 控件使用者重写本方法, 获取翻页事件, 可用来向服务器端发起AJAX请求.
@@ -117,6 +120,17 @@ var PagerView = function(id){
 
 		return rows.slice(s_num, e_num);	
 	};
+	
+	function build_url(index){
+		var ret = '';
+		if(!self.urlBase){
+			ret = 'javascript://' + index;
+		}else{
+			ret += (self.urlBase.indexOf('?') == -1)? '?' : '&';
+			ret += 'page=' + index + '&size=' + self.size;
+		}
+		return ret;
+	}
 
 	/**
 	 * 渲染控件.
@@ -132,8 +146,8 @@ var PagerView = function(id){
 		str += '<div class="PagerView">\n';
 		if(self._pageCount > 1){
 			if(self.index != 1){
-				str += '<a href="javascript://1"><span>|&lt;</span></a>';
-				str += '<a href="javascript://' + (self.index-1) + '"><span>&lt;&lt;</span></a>';
+				str += '<a href="' + build_url(1) + '"><span>|&lt;</span></a>';
+				str += '<a href="' + build_url(self.index-1) + '"><span>&lt;&lt;</span></a>';
 			}else{
 				str += '<span>|&lt;</span>';
 				str += '<span>&lt;&lt;</span>';
@@ -143,13 +157,13 @@ var PagerView = function(id){
 			if(i == this.index){
 				str += '<span class="on">' + i + "</span>";
 			}else{
-				str += '<a href="javascript://' + i + '"><span>' + i + '</span></a>';
+				str += '<a href="' + build_url(i) + '"><span>' + i + '</span></a>';
 			}
 		}
 		if(self._pageCount > 1){
 			if(self.index != self._pageCount){
-				str += '<a href="javascript://' + (self.index+1) + '"><span>&gt;&gt;</span></a>';
-				str += '<a href="javascript://' + self._pageCount + '"><span>&gt;|</span></a>';
+				str += '<a href="' + build_url(self.index+1) + '"><span>&gt;&gt;</span></a>';
+				str += '<a href="' + build_url(self._pageCount) + '"><span>&gt;|</span></a>';
 			}else{
 				str += '<span>&gt;&gt;</span>';
 				str += '<span>&gt;|</span>';
@@ -165,10 +179,17 @@ var PagerView = function(id){
 			a_list[i].onclick = function(){
 				var index = this.getAttribute('href');
 				if(index != undefined && index != ''){
-					index = parseInt(index.replace('javascript://', ''));
-					self._onclick(index)
+					if(!self.urlBase){
+						index = parseInt(index.replace('javascript://', ''));
+					}else{
+						var ps = index.match(/[\?&]page=([0-9]+)/);
+						index = ps? parseInt(ps[1]) : 1;
+					}
+					var ret = self._onclick(index)
+					if(ret === false){
+						return false;
+					}
 				}
-				return false;
 			};
 		}
 	};
