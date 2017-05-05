@@ -126,6 +126,7 @@ var PagerView = function(id){
 		if(!self.urlBase){
 			ret = 'javascript://' + index;
 		}else{
+			ret = self.urlBase;
 			ret += (self.urlBase.indexOf('?') == -1)? '?' : '&';
 			ret += 'page=' + index + '&size=' + self.size;
 		}
